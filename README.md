@@ -1,16 +1,15 @@
 # kaniko-example
 
-This example was suitable for beginners who want to start using kaniko with local environment. It requires only general kubernetes and docker usage, and NO google cloud or aws or any third part cloud service support. It aims to help user establish a quick start successfully and deep dive after that.
+This example was suitable for beginners who want to start using kaniko with local environment, Minikube.
 
 ## Table of Content
-1. [Prerequisities](#Prerequisities)
-2. [Getting Started](#Getting Started)
+1. [Prerequisities](#Prerequisitie)
+2. [Getting Started](#Getting-Started)
 3. [Prepare config files for kaniko](#Prepare-config-files-for-kaniko)
-4. [Prepare the mounted directory in minikube](#Prepare-the-mounted-directory-in-minikube)
+4. [Prepare workspace using configMap](#Prepare-workspace-using-configMap)
 5. [Create a Secret that holds your authorization token](#Create-a-Secret-that-holds-your-authorization-token)
 6. [Create resources in kubernetes](#Create-resources-in-kubernetes)
 7. [Pull the image and test](#Pull-the-image-and-test)
-
 
 
 ## Prerequisities
