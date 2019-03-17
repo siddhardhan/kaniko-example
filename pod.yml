@@ -5,9 +5,11 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: gcr.io/kaniko-project/executor:latest
+    image: gcr.io/kaniko-project/executor:9912ccbf8d22bbafbf971124600fbb0b13b9cbd6
     args: ["--dockerfile=/workspace/Dockerfile",
             "--context=dir://workspace",
+            "--cache=true",
+            "--cache-repo=siddhardhan/kaniko-example-cache",
             "--destination=siddhardhan/kaniko-example"] # replace with your dockerhub account
     volumeMounts:
       - name: dockerhub-secret
